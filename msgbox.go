@@ -8,7 +8,7 @@ import (
 
 // https://github.com/golang/go/wiki/WindowsDLLs
 // https://github.com/antonlahti/go-winapi/blob/8d5f10e8e797cf4c7856add65d44ad56be5e3211/winapi.go#L46
-func main() {
+func main4() {
 	var mod = syscall.NewLazyDLL("user32.dll")
 	var proc = mod.NewProc("MessageBoxW")
 	var MB_YESNOCANCEL = 0x00000003
